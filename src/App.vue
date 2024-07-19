@@ -18,6 +18,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  min-width: inherit;
   font-family: "思源黑体", serif;
 }
 
@@ -28,7 +29,6 @@ body {
   /* 保持背景图片固定，不随页面滚动 */
   background-attachment: fixed;
   /* 设置背景图片居中 */
-  background-position: center;
   /* 确保背景图片不重复 */
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
@@ -36,29 +36,28 @@ body {
   text-align: center;
   color: #fff;
   font-family: "思源黑体", serif;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100;
   margin: 0;
 }
 header {
-  line-height: 1.5;
+  line-height: 1.5vh;
 }
 
 
 .main-page {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
 }
 
 .e-main {
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 0vh;
 }
 
 .e-foot {
-  height: 3%;
-  color: #fff;
+  height: 30vh;
 }
 </style>
