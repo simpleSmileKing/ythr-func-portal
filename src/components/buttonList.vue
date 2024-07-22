@@ -15,7 +15,7 @@ const props = defineProps({
   <el-text type="primary" tag="p" class="tem-title">{{ props.title }}</el-text>
   <div class='btns'>
     <div class="ico" v-for="item in props.btns" :key="item.imageSrc">
-      <img :src="item.imageSrc" alt="Logo" style="height:4vh;width:5vw;padding:2vh 2.5vh;">
+      <img :src="item.imageSrc" alt="Logo" style="height:4vh;width:4vw;padding:2vh 2.5vh;">
       <p style="margin: 0vh 1vw;">{{ item.desc }}</p>
     </div>
   </div>
@@ -28,6 +28,7 @@ const props = defineProps({
   justify-content: left;
   align-items: center;
   justify-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
   color: #426169d2;
   font-weight: bold;
@@ -38,6 +39,7 @@ const props = defineProps({
 
 .ico:hover{
   background-color: rgba(255, 255, 255, 0.255);
+
 }
 .tem-title {
   display: inline-block;
